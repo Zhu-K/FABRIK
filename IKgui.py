@@ -48,6 +48,7 @@ def newIK(event):
     
     master.focus()
 
+    # checks for valid input, reset entry if not valid
     temp = e_lengths.get()
     lengths = temp.split(',')
     for i, length in enumerate(lengths):
