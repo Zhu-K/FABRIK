@@ -1,8 +1,12 @@
+# FABRIK imeplementation of IK
+# Author: Kai Zhu
+# 2021
+
 from tkinter import *
 import math
-from ikchain import IKChain
+from lib.ikchain import IKChain
 
-VERSION = "0.5"
+VERSION = "0.6"
 
 master = Tk()
 master.title("IK GUI  " + VERSION)
