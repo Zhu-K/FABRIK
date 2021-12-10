@@ -7,6 +7,7 @@
 node_modules/
 dist/
 Old/
+test.py
 
 # Compiled Java class files
 *.class

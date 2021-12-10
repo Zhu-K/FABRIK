@@ -71,8 +71,13 @@ class IKChain:
 
             if seg.parent:
                 seg.local_angle = seg.global_angle - seg.parent.global_angle
+                # if seg.local_angle < 0.2:               # angle limit test
+                #     seg.global_angle = 0.2 + seg.parent.global_angle
+
             else:
                 seg.local_angle = seg.global_angle
+                # if seg.local_angle < 0.5:               # angle limit test
+                #     seg.global_angle = 0.5
 
             seg.v = np.add(seg.polar2xy(seg.global_angle + math.pi), tgt)
 
